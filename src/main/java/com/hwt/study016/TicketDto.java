@@ -1,4 +1,4 @@
-package com.heekwoncompany.study016;
+package com.hwt.study016;
 
 public class TicketDto {
 	

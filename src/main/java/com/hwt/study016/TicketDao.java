@@ -1,4 +1,4 @@
-package com.heekwoncompany.study016;
+package com.hwt.study016;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -31,7 +31,7 @@ public class TicketDao {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void buyTicket(final TicketDto dto) {
+	public void buy_ticket(final TicketDto dto) {
 		
 		transactionTemplate.execute(new TransactionCallbackWithoutResult() {
 			

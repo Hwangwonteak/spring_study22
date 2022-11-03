@@ -1,4 +1,4 @@
-package com.heekwoncompany.study016;
+package com.hwt.study016;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,16 +15,16 @@ public class TicketController {
 		this.dao = dao;
 	}
 
-	@RequestMapping(value = "/buyTicket")
+	@RequestMapping(value = "/")
 	public String buyTicket() {
 		
-		return "buyTicket";
+		return "/buy_ticket";
 	}
 	
 	@RequestMapping(value = "/buy_ticket_card")
 	public String buy_ticket_card(TicketDto ticketDto, Model model) {
 //		TicketDao dao = new TicketDao();
-		dao.buyTicket(ticketDto);
+		dao.buy_ticket(ticketDto);
 		
 		model.addAttribute("ticketInfo", ticketDto);
 		

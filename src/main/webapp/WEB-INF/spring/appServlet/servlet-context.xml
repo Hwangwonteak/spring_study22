@@ -40,13 +40,13 @@
 		<beans:property name="transactionManager" ref="transactionManager"></beans:property>
 	</beans:bean>
 	
-	<beans:bean name="dao" class="com.heekwoncompany.study016.TicketDao">
+	<beans:bean name="dao" class="com.hwt.study016.TicketDao">
 		<beans:property name="template" ref="template"></beans:property>
 		<beans:property name="transactionTemplate" ref="transactionTemplate"></beans:property>
 	</beans:bean>
 	
 	
-	<context:component-scan base-package="com.heekwoncompany.study016" />
+	<context:component-scan base-package="com.hwt.study016" />
 	
 	
 	
